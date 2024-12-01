@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фітнес-тренер онлайн</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      background-color: #222;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #444;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .section button {
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .section button:hover {
+      background-color: #444;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .blog-post {
+      border-bottom: 1px solid #ddd;
+      padding: 20px 0;
+    }
+
+    .blog-post h3 {
+      font-size: 1.5em;
+    }
+
+    .blog-post p {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Фітнес-тренер онлайн</h1>
+  <p>Досягайте своїх цілей з індивідуальним підходом</p>
+</header>
+
+<nav>
+  <a href="#services">Послуги</a>
+  <a href="#blog">Блог</a>
+  <a href="#contact">Контакти</a>
+</nav>
+
+<div class="hero">
+  <h1>Ваш персональний тренер онлайн</h1>
+  <p>Індивідуальні плани харчування та тренувань для досягнення ваших цілей</p>
+  <button onclick="scrollToForm()">Записатися на консультацію</button>
+</div>
+
+<section id="services" class="section">
+  <h2>Послуги</h2>
+  <p>🔹 Індивідуальні плани харчування</p>
+  <p>🔹 Індивідуальні плани тренувань</p>
+  <p>🔹 Тренування в домашніх умовах</p>
+  <p>🔹 Повноцінний онлайн супровід</p>
+</section>
+
+<section id="blog" class="section">
+  <h2>Блог</h2>
+
+  <div class="blog-post">
+    <h3>5 порад для ефективного домашнього тренування</h3>
+    <p>Тренування вдома може бути настільки ж ефективним, як і в залі, якщо правильно підійти до процесу...</p>
+  </div>
+
+  <div class="blog-post">
+    <h3>Що їсти перед тренуванням?</h3>
+    <p>Передтренувальне харчування має ключове значення для ефективності занять...</p>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Записатися на консультацію</h2>
+  <form action="https://example.com/submit-form" method="POST">
+    <input type="text" name="name" placeholder="Ваше ім'я" required>
+    <input type="email" name="email" placeholder="Ваш email" required>
+    <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+    <button type="submit">Відправити</button>
+  </form>
+</section>
+
+<section id="payment" class="section">
+  <h2>Оплата послуг</h2>
+  <p>Ви можете оплатити послуги за допомогою WayForPay</p>
+  <button onclick="window.location.href='https://secure.wayforpay.com/button...';">Оплатити зараз</button>
+</section>
+
+<footer>
+  <p>© 2024 Фітнес-тренер онлайн. Всі права захищені.</p>
+</footer>
+
+<script>
+  function scrollToForm() {
+    document.getElementById("contact").scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
